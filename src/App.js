@@ -1,25 +1,85 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+
+import Footer from "./component/Footer"
+
+
+import "./App.css"
+
+import Contact from './component/Contact'
+import Home1 from './component/Home1'
+import About from './component/About'
+import Header from "./component/Header"
+import Service from './component/Service';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div>
+      
+           
+      
+          
+       
+                
+                    
+   </div>
+          <BrowserRouter>
+         
+          
+        <Switch>
+            <Route path="/" exact >
+              
+             <Header/>
+             <Home1/>
+            <About/>
+            <Service/>
+            <Contact/>
+            <Footer/>
+          </Route>
+         
+          <Route path="/home"  >
+              <Header/>
+              <Home1/>
+              <Footer/>
+             
+          </Route>
+          <Route path="/about"  >
+            <Header/>
+              <About/>
+             <Footer/>
+          </Route>
+         
+          <Route path="/service"  >
+              
+              <Header/>
+             <Service/>
+             <Footer/>
+           </Route>
+          
+           <Route path="/contact"  >
+           <Header/>
+              <Contact/>
+             <Footer/>
+              
+           </Route>
+           <Route path="/footer"  >
+             <Header/>
+              
+             <Footer/>
+             
+          </Route>
+         
+
+          </Switch>
+         
+        
+        
+        </BrowserRouter>
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

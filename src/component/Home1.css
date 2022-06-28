@@ -1,0 +1,105 @@
+.i-card{
+   height: 100vh;
+   display: flex;
+   margin-bottom: 4rem;
+}
+.i-card-info{
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   position: relative;
+}
+.i-card-form{
+   display: flex;
+   flex-direction: column;
+   position: absolute;
+   position: fixed;
+   position: relative;
+   margin-left: 4rem;
+   height: 50%;
+   margin-bottom: 10rem;
+   transform: scale(0.66);
+
+}
+
+.i-card-form>:nth-child(1){
+
+   color: orchid;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+   }
+
+
+   .i-card-form>:nth-child(2){
+    gap: 2rem;
+      color:black;
+         text-align: center;
+         text-transform: uppercase;
+         font-weight: bold;
+         font-size: 2rem;
+         margin-bottom: 1rem;
+      }
+
+      .i-card-form>:nth-child(3){
+         gap: 1rem;
+           color:black;
+              text-align: center;
+              text-transform: uppercase;
+              font-weight: bold;
+              font-size: 1rem;
+              margin-bottom: 1rem;
+           }
+
+
+           .i-card-form>:nth-child(4){
+            gap: 1rem;
+              color: black;
+
+                 background-color: currentColor  ;
+                 text-align: center;
+                 text-transform: uppercase;
+                 font-weight: bold;
+                 font-size: 10px;
+                 margin-bottom: 1rem;
+                 text-decoration: black;
+                 margin-bottom: 4rem;
+                 
+
+              }
+
+              .i-image{
+               margin-top: 2rem;
+               flex-wrap: wrap;
+         background-color: black;
+         ;
+         border-radius: 5rem;
+         margin-right: 3rem;
+         width: 200px;
+         height: 200px;
+         font-size: small;
+         color: aquamarine;
+         top: 2rem;
+            }
+    
+            .i-image>:nth-child(1){
+               margin-top: 2rem;
+               background-color: aqua;
+               font-size: 7rem;
+               border: 1px solid olivedrab;
+               background-color: greenyellow;
+               border-radius: 5rem;
+               background-image: url( "https://www.flaticon.com/free-icons/person");
+            }
+            @media (max-width:330) {
+              .i-card{  height: 300px;
+
+               display: flex;
+               margin-bottom: 7rem;
+             } 
+               .i-card-form{
+                  transform: scale(0.66);
+               }
+            }
